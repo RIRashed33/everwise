@@ -113,6 +113,7 @@ a.salmon-btn:hover {
 
 /* Header-area */
 header.header-area .header-top-content {
+    background: -webkit-linear-gradient(left, #0E384C 8.5%, #8C6286 49.61%, #EE7B6F 90.73%);
     background: linear-gradient(90deg, #0E384C 8.5%, #8C6286 49.61%, #EE7B6F 90.73%);
     padding: 12px 0;
     color: var(--white);
@@ -204,10 +205,15 @@ nav.single-footer-nav ul li a:hover{
     margin-bottom: 35px;
 }
 .button-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 16px;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 .main-hero-banner img {
     border-radius: 100px 0px 0px 0px;
@@ -254,7 +260,8 @@ nav.single-footer-nav ul li a:hover{
 /* Full Width Img */
 .full-width-image img, .full-width-bg img {
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 /* Three Column Section */
@@ -305,19 +312,21 @@ section.flipped-image-section, section.faq-section, section.email-content-sectio
     padding: 8px 42px 8px 0;
     position: relative;
 }
-.single-faq-item > a::before, .single-faq-item > a::after {
+.single-faq-item > a:before, .single-faq-item > a:after {
     content: "";
     width: 20px;
     height: 2px;
     border-radius: 2px;
     background-color: var(--main-color);
+    -webkit-transition: all 0.4s;
     transition: all 0.4s;
     position: absolute;
     top: 21px;
     right: 8px;
 }
-.single-faq-item > a.collapsed::after {
-    transform: rotate(90deg);
+.single-faq-item > a.collapsed:after {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
 }
 .single-faq-content {
     padding: 8px 0;
@@ -404,17 +413,15 @@ section.better-panning-section {
     font-family: 'Font Awesome 6 Pro';
     font-size: 24px;
     line-height: 20px;
+    -webkit-transition: 0.4s;
     transition: 0.4s;
-    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
 }
 .single-panning-item a.collapsed:after {
-    transform: rotate(0);
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
 }
 .single-panning-content {
     padding-bottom: 20px;
 }
-
-
-
-
-
