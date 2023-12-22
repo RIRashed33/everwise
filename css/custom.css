@@ -320,77 +320,47 @@ nav.single-footer-nav ul li a:hover{
 }
 
 /* flipped image */
-section.flipped-image-section {
+section.flipped-image-section, section.faq-section {
     padding: 80px 0;
 }
 .flipped-content p {
     margin-bottom: 32px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- .flipped-image-section-content h5 {
-    margin-bottom: 23px;
- }
- .flipped-image-section-img img {
-    border-radius: 10px;
- }
-
 /* FAQ Section */
- section.faq-section {
-    background-color: var(--white);
-    padding-bottom: 86px;
- }
- .faq-heading {
-    margin-bottom: 11px;
- }
- .faq-list a {
+.single-faq-item:not(.single-faq-item:last-child) {
+    margin-bottom: 8px;
+}
+.single-faq-item > a {
     font-size: 21px;
+    line-height: 1.33;
     color: var(--main-color);
     font-family: var(--header-font);
     font-weight: 500;
     display: block;
-    padding: 14px 0;
+    padding: 8px 42px 8px 0;
     position: relative;
 }
- .faq-details p {
-    margin-bottom: 24px;
-}
- .faq-item a:after {
-    content: "\f105";
+.single-faq-item > a::before, .single-faq-item > a::after {
+    content: "";
+    width: 20px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: var(--main-color);
+    transition: all 0.4s;
     position: absolute;
-    top: 50%;
-    right: 0;
-    font-family: 'Font Awesome 6 Pro';
-    font-size: 24px;
-    margin-top: -18px;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    top: 21px;
+    right: 8px;
 }
- .panning-item a.collapsed:after {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
+.single-faq-item > a.collapsed::after {
+    transform: rotate(90deg);
 }
+.single-faq-content {
+    padding: 8px 0;
+}
+
+
+
 
 /* Better Panning */
 section.better-panning {

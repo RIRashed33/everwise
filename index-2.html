@@ -5,58 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- All fonts and css link here -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/ena6ijc.css">
-    <link rel="stylesheet" href="./css/neulis-font.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://use.typekit.net/nlc6vyx.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/custom.css">
     <link rel="stylesheet" href="./css/responsive.css">
 </head>
 <body>
-<!-- Header-area -->
-<section class="pre-header">
-    <div class="container">
-        <p>Call today for a free business evaluation. (800) 659-5949</p>
-    </div>
-</section>
-<header class="header-area">
-        <div class="large-container">
-            <div class="row g-0 align-items-center justify-content-between">
-                <div class="col-lg-auto">
-                    <div class="mobile-header">
-                        <a href="#" class="logo"><img src="./img/black-logo.png" alt=""></a>
-                        <div class="menubar-right d-lg-none">
-                            <a href="#" class="login-btn d-lg-none">Login</a>
-                            <a href="#mainNavMenu" data-bs-toggle="collapse" class="mobile-bar" onclick="openMobileMenu()">
-                                <span></span>
-                                <span></span>
-                                <span></span>
+    <!-- Header Area -->
+    <header class="header-area">
+        <div class="header-top-content d-none d-lg-block">
+            <div class="large-container">
+                <p>Call today for a free business evaluation. (800) 659-5949</p>
+            </div>
+        </div>
+        <div class="main-header-content">
+            <div class="large-container">
+                <div class="row g-0 align-items-center">
+                    <div class="col-lg-auto">
+                        <div class="mobile-header">
+                            <a href="#" class="logo">
+                                <img src="./img/black-logo.png" alt="" class="dark-logo">
+                                <img src="./img/white-logo.png" alt="" class="white-logo">
                             </a>
+                            <div class="d-flex align-items-center d-lg-none">
+                                <a href="#" class="login-btn d-lg-none"><i class="fa-regular fa-arrow-right-to-bracket"></i>Login</a>
+                                <a href="#mainNavMenu" data-bs-toggle="collapse" class="mobile-bar" onclick="openMobileMenu()">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg navbar-expand-lg">
-                    <nav class="nav-menu collapse navbar-collapse" id="mainNavMenu">
-                        <ul>
-                            <li><a href="#">How it works</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Resources</a></li>
-                            <li><a href="#">About</a></li>
-                        </ul>
-                        <a href="#" class="purple-btn d-inline-block d-lg-none">Apply</a>
-                    </nav>
-                </div>
-                <div class="col-lg-auto d-none d-lg-block">
-                    <div class="login-and-apply">
-                        <a href="#" class="login-btn">Login</a>
-                        <a href="#" class="purple-btn">Apply</a>
+                    <div class="col-lg navbar-expand-lg d-lg-flex align-items-lg-center justify-content-lg-between">
+                        <nav class="nav-menu collapse navbar-collapse" id="mainNavMenu">
+                            <ul>
+                                <li><a href="#">How it works</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Resources</a></li>
+                                <li><a href="#">About</a></li>
+                            </ul>
+                            <div class="text-center d-lg-none pb-4">
+                                <a href="#" class="purple-btn">Apply</a>
+                            </div>
+                        </nav>
+                        <div class="login-and-apply d-none d-lg-block">
+                            <a href="#" class="login-btn">Login</a>
+                            <a href="#" class="purple-btn">Apply</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-</header>
+    </header>
+    <!-- End Header -->
 
 <!-- Inner Section -->
 <section class="inner-header">
@@ -169,66 +174,75 @@
     </div>
 </section>
 
-<!-- Footer area -->
-<footer class="footer-area">
-    <div class="large-container">
-        <div class="row justify-content-between align-items-center flex-lg-row flex-column-reverse">
-            <div class="col-lg-5">
-                <div class="logo-area">
-                    <a href="#"><img src="./img/white-logo.png" alt="Logo"></a>
-                    <p>Contact Us</p>
-                    <p class="destination"> 384 S 400 W Suite 100-7 <br> Lindon, UT 84042</p>
-                    <a href="#" class="contact-btn">Contact Us</a>
-                    <a href="#" class="evaluation-btn">Get a free evaluation</a>
+    <!-- Footer area -->
+    <footer class="footer-area">
+        <div class="large-container">
+            <div class="row justify-content-between align-items-center flex-lg-row flex-column-reverse">
+                <div class="col-lg-auto">
+                    <div class="footer-left">
+                        <a href="#" class="mb-4"><img src="./img/white-logo.png" alt="Logo"></a>
+                        <p class="mb-4">Contact Us</p>
+                        <p class="mb-5"> 384 S 400 W Suite 100-7 <br> Lindon, UT 84042</p>
+                        <a href="#" class="purple-btn w-100 mb-3">Contact Us</a>
+                        <a href="#" class="salmon-btn w-100">Get a free evaluation</a>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-7">
-                <div class="footar-right">
-                    <h1>We educate, assist, review, and <br> submit. <span>You cheer us on.</span></h1>
-                    <div class="footer-right-content">
-                        <div class="row">
-                            <div class="col-lg-3">
-                                <h6>EVERWISE</h6>
-                                <ul>
-                                    <li>About us</li>
-                                    <li>How it works</li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-3">
-                                <h6>RESOURCES</h6>
-                                <ul>
-                                    <li>FAQ</li>
-                                    <li>Educational Videos</li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-3">
-                                <h6>PROGRAMS</h6>
-                                <ul>
-                                    <li>PHI</li>
-                                    <li>R&D</li>
-                                    <li>ERC</li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-3">
-                                <h6>APPLY</h6>
-                                <ul>
-                                    <li>PHI</li>
-                                    <li>R&D</li>
-                                    <li>ERC</li>
-                                </ul>
+                <div class="col-lg">
+                    <div class="footar-right ps-lg-4">
+                        <h1>We educate, assist, review, and submit. <span>You cheer us on.</span></h1>
+                        <div class="footer-navmenu d-none d-lg-block">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <nav class="single-footer-nav">
+                                        <h6>EVERWISE</h6>
+                                        <ul>
+                                            <li><a href="#">About us</a></li>
+                                            <li><a href="#">How it works</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="col-lg-3">
+                                    <nav class="single-footer-nav">
+                                        <h6>RESOURCES</h6>
+                                        <ul>
+                                            <li><a href="#">FAQ</a></li>
+                                            <li><a href="#">Educational Videos</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="col-lg-3">
+                                    <nav class="single-footer-nav">
+                                        <h6>PROGRAMS</h6>
+                                        <ul>
+                                            <li><a href="#">PHI</a></li>
+                                            <li><a href="#">R&D</a></li>
+                                            <li><a href="#">ERC</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="col-lg-3">
+                                    <nav class="single-footer-nav">
+                                        <h6>APPLY</h6>
+                                        <ul>
+                                            <li><a href="#">PHI</a></li>
+                                            <li><a href="#">R&D</a></li>
+                                            <li><a href="#">ERC</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <p class="copyright">&copy; 2023 All Rights Reserved <a href="#">Privacy</a> | <a href="#">Terms</a> | <a href="#">Login</a></p>
         </div>
-        <p class="copyright">&copy; 2023 All Rights Reserved Privacy | Terms | Login</p>
-    </div>
-</footer>
+    </footer>
 
-
-<script src="./js/jquery-3.6.4.min.js"></script>
-<script src="./js/bootstrap.min.js"></script>
-<script src="./js/main.js"></script>
+    <!-- All script and font-awesome script here -->
+    <script src="./js/jquery-3.6.4.min.js"></script>
+    <script src="https://kit.fontawesome.com/9ff5fb97fe.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
