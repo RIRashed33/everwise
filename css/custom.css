@@ -90,9 +90,10 @@ a.purple-btn, .salmon-btn {
     color: var(--white);
     font-weight: 700;
     line-height: 1.25;
+    min-width: 210px;
     background-color: var(--dusty-purple);
     border-radius: 5px;
-    padding: 11px 51px;
+    padding: 11px 44px;
     border: 1px solid var(--dusty-purple);
     text-align: center;
 }
@@ -101,50 +102,11 @@ a.purple-btn:hover {
     color: var(--dusty-purple);
 }
 .salmon-btn {
-    padding: 11px 44px;
     border: 1px solid var(--salmon);
     color: var(--salmon);
     background-color: transparent;
 }
 a.salmon-btn:hover {
-    color: var(--white);
-    background-color: var(--salmon);
-}
-
-
-
-
-
-
-
-
-
-
-
-.signUp-btn {
-    color: var(--white);
-    background-color: var(--dusty-purple);
-    text-align: center;
-    font-family: var(--body-font);
-    font-size: 16px;
-    font-weight: 700;
-    padding: 11px 43px;
-    border-radius: 5px;
-}
-.signUp-btn:hover {
-    background-color: var(--dark-blue);
-}
-.learnMore-btn {
-    color: var(--salmon);
-    background-color: var(--white);
-    font-family: var(--body-font);
-    font-size: 16px;
-    font-weight: 700;
-    border: 1px solid var(--salmon);
-    padding: 10px 41px;
-    border-radius: 5px;
-}
-.learnMore-btn:hover {
     color: var(--white);
     background-color: var(--salmon);
 }
@@ -189,6 +151,9 @@ a.login-btn {
 }
 a.login-btn:hover {
     color: var(--salmon);
+}
+.login-and-apply > a.purple-btn {
+    min-width: 150px;
 }
 
 /* Footer area */
@@ -254,7 +219,6 @@ nav.single-footer-nav ul li a:hover{
     background-color: var(--dark-blue);
     padding: 100px 0 120px;
     background-repeat: no-repeat;
-    background-size: contain;
     background-position: center right;
 }
 .benefits-content h2 {
@@ -300,7 +264,7 @@ nav.single-footer-nav ul li a:hover{
     padding: 100px 0;
     text-align: center;
 }
-.three-column-content {
+.three-column-content, .programs-content, .two-column-content {
     max-width: 900px;
     margin: 0 auto 60px;
 }
@@ -320,8 +284,11 @@ nav.single-footer-nav ul li a:hover{
 }
 
 /* flipped image */
-section.flipped-image-section, section.faq-section {
+section.flipped-image-section, section.faq-section, section.email-content-section {
     padding: 80px 0;
+}
+.flipped-image img {
+    border-radius: 10px;
 }
 .flipped-content p {
     margin-bottom: 32px;
@@ -358,6 +325,66 @@ section.flipped-image-section, section.faq-section {
 .single-faq-content {
     padding: 8px 0;
 }
+
+/* Inner Header */
+.inner-header-section, .programs-section {
+    padding: 100px 0 80px;
+}
+.inner-header-content {
+    max-width: 800px;
+}
+.inner-header-content p {
+    margin-bottom: 24px;
+}
+.inner-header-content a.salmon-btn, .inner-header-content a.purple-btn {
+    min-width: 170px;
+}
+/* programs-section */
+.programs-section {
+    text-align: center;
+}
+.programs-content h2 {
+    margin-bottom: 24px;
+}
+section.programs-section img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 48px;
+}
+
+/* Email Content */
+.email-content-with-heading:not(.email-content-with-heading:last-child) {
+    margin-bottom: 80px;
+}
+.email-content-with-heading h3 {
+    margin-bottom: 16px;
+    line-height: 1.25;
+    font-weight: 500;
+}
+
+/* two-column-section */
+section.two-column-section {
+    text-align: center;
+}
+.two-column-section p {
+    margin-bottom: 37px;
+}
+section.two-column-section img {
+    margin-bottom: 21px;
+}
+section.two-column-section h3 {
+    margin-bottom: 13px;
+}
+section.two-column-section h5 {
+    margin-bottom: 37px;
+}
+
+
+
+
+
+
+
 
 
 
@@ -407,68 +434,7 @@ section.better-panning {
             transform: rotate(0);
  }
 
-/* Inner Header */
-.inner-header {
-    padding-top: 132px;
-    padding-bottom: 87px;
-}
-.inner-header-content {
-    max-width: 800px;
-}
-.inner-header-content h6 {
-    margin-bottom: 18px;
-}
-.inner-header-content .learnMore-btn {
-    margin-right: 17px;
-}
 
-/* programs-section */
-.programs-section {
-    padding-top: 136px;
-    padding-bottom: 187px;
-    text-align: center;
-}
-.programs-content h2, .programs-content p, .two-column-section h2, .two-column-section p {
-    max-width: 870px;
-    margin: 0 auto;
-}
-.programs-content p {
-    margin-bottom: 25px;
-}
-.programs-content img {
-    margin-bottom: 52px;
-}
-
-/* Email Content */
-section.email-content-section {
-    margin-bottom: 145px;
-}
-section.email-content-section h2 {
-    margin-bottom: 14px;
-}
-section.email-content-section h3 {
-    margin-top: 35px;
-    margin-bottom: 23px;
-}
-
-
-/* two-column-section */
-.two-column-section {
-    text-align: center;
-    margin-bottom: 130px;
-}
-.two-column-section p {
-    margin-bottom: 37px;
-}
-section.two-column-section img {
-    margin-bottom: 21px;
-}
-section.two-column-section h3 {
-    margin-bottom: 13px;
-}
-section.two-column-section h5 {
-    margin-bottom: 37px;
-}
 
 
 
